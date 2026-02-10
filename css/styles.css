@@ -313,15 +313,48 @@ section p {
     row-gap: 48px;
     column-gap: 24px;
 }
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-list-item {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
 }
 .portfolio-discription-list {
     padding: 32px 16px;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
+}
+.portfolio-list-overlay {
+    position: absolute;
+    background-color: #4D5AE5;
+    color:#F4F4FD;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    overflow: auto;
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+.portfolio-list-overlay p {
+    color:#F4F4FD;
+}
+.portfolio-list-item:hover .portfolio-list-overlay {
+    transform: translateY(0);
 }
 /* #endregion footer */
 /* #region footer*/
