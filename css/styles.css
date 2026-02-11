@@ -29,7 +29,8 @@ button {
 }
 /* #region header */
 header {
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+
 }
 .header-page {
     display: flex;
@@ -50,7 +51,7 @@ header {
     display: block;
     padding: 24px 0;
     margin-right: 76px;
-    transition-property: background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -90,7 +91,7 @@ ul {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-    transition-property: background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -117,7 +118,7 @@ address a {
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.02em;
-    transition-property: background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -138,10 +139,12 @@ address a {
     color: #FFFFFF;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office\ 1.jpg);    
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .hero-button {
     display: flex;
@@ -232,12 +235,15 @@ section p {
 
 }
 .features-list-icon {
-    display: block;
+    display: flex;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     background-color: #F4F4FD;
     margin-bottom: 8px;
     padding: 24px 100px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -318,7 +324,7 @@ section p {
     overflow: hidden;
 }
 .portfolio-list-item {
-    transition-property: background-color;
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
